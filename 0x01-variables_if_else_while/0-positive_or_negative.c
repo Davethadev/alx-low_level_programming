@@ -5,7 +5,7 @@
 /* betty style doc for function main goes there */
 /**
  * main - prints a string
- * return: Returns 0
+ * Return: Returns 0
 */
 int main(void)
 {
