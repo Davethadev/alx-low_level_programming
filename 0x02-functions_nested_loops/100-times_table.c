@@ -24,14 +24,11 @@ void print_times_table(int n)
 				product = x * y;
 
 				if (product <= 99)
-				{
 					_putchar(' ');
-				}
-				else if (product <= 9)
-				{
+				if (product <= 9)
 					_putchar(' ');
-				}
-				else if (product >= 100)
+
+				if (product >= 100)
 				{
 					_putchar((product / 100) + '0');
 					_putchar(((product / 10)) % 10 + '0');
@@ -40,7 +37,6 @@ void print_times_table(int n)
 				{
 					_putchar((product / 10) + '0');
 				}
-
 				_putchar((product % 10) + '0');
 			}
 
