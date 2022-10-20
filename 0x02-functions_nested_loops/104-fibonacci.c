@@ -20,7 +20,7 @@ int main(void)
 		b = sum;
 	}
 
-	a_half1 =  a / 10000000000;
+	a_half1 = a / 10000000000;
 	b_half1 = b / 10000000000;
 	a_half2 = a % 10000000000;
 	b_half2 = b % 10000000000;
@@ -34,14 +34,15 @@ int main(void)
 			half1 += 1;
 			half2 %= 10000000000;
 		}
+
 		printf("%lu%lu", half1, half2);
 		if (n != 98)
 			printf(", ");
 
 		a_half1 = b_half1;
 		a_half2 = b_half2;
-		a_half1 = half1;
-		a_half2 = half2;
+		b_half1 = half1;
+		b_half2 = half2;
 	}
 	printf("\n");
 	return (0);
