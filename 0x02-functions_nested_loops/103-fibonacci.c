@@ -14,7 +14,7 @@ int main(void)
 	{
 		sum = a + b;
 
-		if (sum > 4,000,000)
+		if (sum > 4000000)
 			break;
 		if ((sum % 2) == 0)
 			total_sum += sum;
