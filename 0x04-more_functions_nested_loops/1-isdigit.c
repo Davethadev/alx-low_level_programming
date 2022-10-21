@@ -14,7 +14,7 @@ int _isdigit(int c)
 	check = isdigit(c);
 
 	if (check == 0)
-		return (1);
-	else
 		return (0);
+	else
+		return (1);
 }
