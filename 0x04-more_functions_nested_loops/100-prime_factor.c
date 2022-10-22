@@ -7,15 +7,20 @@
 
 int main(void)
 {
-	unsigned long int x, y = 612852475143;
+	long int x, y = 612852475143;
 
-	for (x = 0; x < 782849; x += 2)
+	for (x = 2; x <= y; x++)
 	{
-		while ((y % x == 0) && (y != x))
-			y = y / x;
+		if (y % x == 0)
+		{
+			y /= x;
+
+			x--;
+		}
+
 	}
 
-	printf("%lu\n", y);
+	printf("%ld\n", x);
 
 	return (0);
 }
