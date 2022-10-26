@@ -12,7 +12,7 @@ void rev_string(char *s)
 
 	length = strlen(s);
 
-	for (n = 0; n = length / 2; n++)
+	for (n = 0; n < length / 2; n++)
 	{
 		oldstr = s[n];
 		s[n] = s[length - 1 - n];
